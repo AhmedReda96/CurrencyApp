@@ -12,7 +12,7 @@ interface ApiService {
   @GET("latest")
     suspend fun getLatest(
         @Query("access_key") accessKey: String?,
-        @Query("base") base : String?,
+        @Query("base ") base : String?,
     ): ApiResponse<Any>
 
 }

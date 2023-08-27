@@ -32,7 +32,7 @@ open class ApiResponse<T>() {
     @Transient
     var request: Any? = null
 
-    constructor(success: Boolean, timestamp: Long, base: String, date: String, data: T?, error: ApiError?) : this() {
+    constructor(success: Boolean, timestamp: Long, base: String, date: String, data: T?, error: ApiError?=null) : this() {
         this.success = success
         this.timestamp = timestamp
         this.base = base

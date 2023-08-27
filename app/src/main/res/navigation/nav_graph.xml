@@ -9,7 +9,11 @@
         android:id="@+id/currencyConversionsFragment"
         android:name="com.example.currencyapp.app.ui.views.currencyConversions.CurrencyConversionsFragment"
         android:label="fragment_currency_conversions"
-        tools:layout="@layout/fragment_currency_conversions" />
+        tools:layout="@layout/fragment_currency_conversions" >
+        <action
+            android:id="@+id/action_currencyConversionsFragment_to_currencyHistoryFragment"
+            app:destination="@id/currencyHistoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/currencyHistoryFragment"
         android:name="com.example.currencyapp.app.ui.views.history.CurrencyHistoryFragment"

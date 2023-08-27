@@ -27,11 +27,11 @@ android {
 
     buildTypes {
         debug{
-         buildConfigField("String", "BASE_URL", "\"https://pokeapi.co/api/v2/\"")
+         buildConfigField("String", "BASE_URL", "\"http://data.fixer.io/api/\"")
          buildConfigField("String", "ACCESS_KEY", "\"85bc3df79428a9fad3271f77cc2315bb\"")
         }
         release{
-            buildConfigField("String", "BASE_URL", "\"https://pokeapi.co/api/v2/\"")
+            buildConfigField("String", "BASE_URL", "\"http://data.fixer.io/api/\"")
             buildConfigField("String", "ACCESS_KEY", "\"85bc3df79428a9fad3271f77cc2315bb\"")
 
             isMinifyEnabled = false
@@ -57,7 +57,7 @@ android {
 
 dependencies {
 
-    implementation("com.google.android.material:material:1.7.0")
+    implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.core:core-ktx:1.12.0-rc01")
@@ -78,7 +78,7 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     // Life cycle
-    implementation ("androidx.lifecycle:lifecycle-extensions:2.0.0")
+    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
     // NavigationUI dependencies
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.1")
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.1")
