@@ -28,9 +28,12 @@ android {
     buildTypes {
         debug{
          buildConfigField("String", "BASE_URL", "\"https://pokeapi.co/api/v2/\"")
+         buildConfigField("String", "ACCESS_KEY", "\"85bc3df79428a9fad3271f77cc2315bb\"")
         }
         release{
             buildConfigField("String", "BASE_URL", "\"https://pokeapi.co/api/v2/\"")
+            buildConfigField("String", "ACCESS_KEY", "\"85bc3df79428a9fad3271f77cc2315bb\"")
+
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -38,6 +41,11 @@ android {
             )
         }
     }
+    buildFeatures {
+        dataBinding= true
+        viewBinding =true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
